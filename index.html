@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    "
+  >
+    <main
+      style="
+        width: 50%;
+        height: 50%;
+        border: 1px solid red;
+        padding: 30px;
+        border-radius: 10px;
+      "
+    >
+      <section
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+          "
+        >
+          <input
+            id="dataInput"
+            type="text"
+            style="
+              outline: none;
+              border-radius: 10px;
+              padding: 3px 5px;
+              border: 1px solid green;
+            "
+          />
+          <button
+            id="addButton"
+            style="
+              border: 1px solid red;
+              background-color: white;
+              border-radius: 10px;
+              padding: 5px 15px;
+              cursor: pointer;
+            "
+          >
+            Add Item
+          </button>
+        </div>
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search items"
+          style="
+            outline: none;
+            border-radius: 10px;
+            padding: 3px 5px;
+            border: 1px solid green;
+          "
+        />
+      </section>
+      <ul id="list"></ul>
+      <button
+        id="removeItemButton"
+        style="
+          border: 1px solid orange;
+          background-color: white;
+          border-radius: 10px;
+          padding: 5px 15px;
+          cursor: pointer;
+        "
+      >
+        Remove Last Item
+      </button>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
